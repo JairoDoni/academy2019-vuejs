@@ -12,3 +12,13 @@ const objeto = {
     telefone: '843-469-9199',
   }
 }
+
+Object.freeze(objeto)
+Object.freeze(objeto.usuario)
+objeto.usuario.nome = "Breno"
+console.log(objeto.usuario)
+//delete objeto.teste
+
+ objeto.freeze(objeto.tenis)
+ objeto.tenis.cor="azul"
+ console.log(objeto.tenis)

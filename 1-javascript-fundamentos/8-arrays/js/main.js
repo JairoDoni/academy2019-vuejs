@@ -39,15 +39,27 @@ const alunosSalas = pessoas.map(pessoa => {
     sala: salas[Math.floor(Math.random()*salas.length)]
   }
 })
+//console.log(alunosSalas);
 
-// filter
-
+// filter =filtro
 const alunosMaioresDeIdade = pessoas.filter(pessoa => {
   return pessoa.idade >= 18
 })
+//console.log(alunosMaioresDeIdade);
+const alunosC = pessoas.filter(pessoa => {
+  return pessoa.nome[0]  =='C'
+})
+//console.log(alunosC);
+//rejects
 
 // reduce
 const valorInicial = 0
 const somaDosNumeros = numeros.reduce((acumulador, valorAtual) => {
   return acumulador + valorAtual
 }, valorInicial)
+//console.log(somaDosNumeros);
+
+cosnt debora = pessoas.find(pessoa => {
+  return pessoa.idade === 15
+  })
+  console.log(debora)
