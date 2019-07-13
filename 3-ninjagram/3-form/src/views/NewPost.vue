@@ -5,6 +5,8 @@
         <img class="icon-back" :src="require('../assets/back.png')">
       </router-link>
     </Header>
+    <!-- v-on pode ser substituido pelo @ 
+    como foi abaixo  -->
     <form class="form" @submit.prevent="newPost">
       <FormControl label="Autor">
         <input v-model="post.author" required type="text" />
@@ -36,7 +38,9 @@ export default {
   data () {
     return {
       post: {
-        author: '',
+        // o que é alterado abaixo nessa funçao pode ser alterado
+        //  tanto aqui como no teste da aplicaçao
+        author: 'Roger',
         title: '',
         url: ''
       }

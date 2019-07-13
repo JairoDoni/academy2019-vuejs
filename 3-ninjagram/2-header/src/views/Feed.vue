@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Header>
+      <!-- componente de rotas -->
       <router-link slot="action-left" class="icon-button" tag="button" to="/login">
         <img class="icon" :src="require('../assets/account.png')">
       </router-link>

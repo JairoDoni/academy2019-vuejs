@@ -1,6 +1,7 @@
 <template>
   <header class="header">
     <div class="action action-left">
+      <!-- slot: chama um outro componente e troca esse por ele -->
       <slot name="action-left" />
     </div>
     <img class="logo" :src="require('../assets/logo.png')" alt="Logo"/>
